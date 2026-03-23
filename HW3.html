@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camden's Birthday Bash</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #ffd6e7, #d6f4ff);
+      color: #222;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 30px 30px 10px 30px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 44px;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      color: #555;
+    }
+
+    .banner {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+      padding: 25px 35px 35px 35px;
+    }
+
+    .details {
+      background: #f7f7ff;
+      border: 2px dashed #9b8cff;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+
+    .details p {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+
+    .list-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 18px 0 22px 0;
+    }
+
+    .card {
+      background: #fff8fb;
+      border: 1px solid #ffd1e1;
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .map-link {
+      display: inline-block;
+      text-decoration: none;
+      background: #6b5bff;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .map-link:hover {
+      background: #5546e8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px 10px 28px 10px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .note {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    @media (max-width: 700px) {
+      .list-box {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img
+      class="banner"
+      src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1400&q=80"
+      alt="Party celebration with balloons and lights"
+    />
+
+    <header>
+      <h1>Camden’s Birthday Party</h1>
+      <h2>You’re invited for food, games, and a good time!</h2>
+    </header>
+
+    <div class="content">
+      <div class="details">
+        <p><strong>Date:</strong> Friday, Augst 7th</p>
+        <p><strong>Time:</strong> 6:00 PM – 10:00 PM</p>
+        <p><strong>Location:</strong> 123 Party Lane, Terre Haute, IN</p>
+        <p class="note">Bring a friend, dress however you want, and come hungry</p>
+      </div>
+
+      <div class="list-box">
+        <div class="card">
+          <h3>Activities</h3>
+          <ul>
+            <li>Video games</li>
+            <li>Music</li>
+            <li>Cards + board games</li>
+            <li>Birthday cake</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Food & Drinks</h3>
+          <ul>
+            <li>Pizza (pepperoni + cheese)</li>
+            <li>Wings & snacks</li>
+            <li>Chips + dip</li>
+            <li>Soda, water, and lemonade</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Get Directions</h3>
+      <p>
+        Click the button below to open Google Maps for the party location:
+      </p>
+
+      <!-- Anchor Tag Link to Google Maps -->
+      <a
+        class="map-link"
+        href="https://www.google.com/maps"
+        target="_blank"
+      >
+        Open Google Maps 📍
+      </a>
+    </div>
+
+    <footer>
+      RSVP by texting: <strong>(765) 505-1124</strong> <br />
+      Can't wait to celebrate with you all!
+    </footer>
+  </div>
+</body>
+</html>
