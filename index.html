@@ -3,61 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-
+    <title>Camden Vinyard Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="Resume.html">Resume</a>
+    </nav>
+
+    <main>
         <h1>My Portfolio</h1>
+        <p>Welcome to my personal portfolio website. This site showcases my homework projects, skills, and contact information.</p>
 
-        <p>Hello! My name is Camden Vinyard, and I am a web developer learning to create functional web applications. Check out my work and feel free to reach out!</p>
+        <section class="projects">
+            <div class="project">
+                <h2>Movie Ranking Project</h2>
+                <p>A webpage that displays my favorite movies ranked by rating with descriptions.</p>
+                <img src="assets/images/BestMovies.png" alt="Movie Ranking Project">
+                <p><a href="HW2.html">View Project</a></p>
+            </div>
 
-        <img src="assets/images/BestMovies.png" alt="Movie Ranking Project">
+            <div class="project">
+                <h2>Birthday Invite Project</h2>
+                <p>A birthday invitation webpage with images, links, and basic webpage structure.</p>
+                <img src="assets/images/Birthday.png" alt="Birthday Invite Project">
+                <p><a href="HW3.html">View Project</a></p>
+            </div>
+        </section>
 
-        <p><a href="Resume.html">View My Resume</a></p>
-        <p><a href="HW2.html">View Movie Ranking Project</a></p>
-        <p><a href="HW3.html">View Birthday Invite Project</a></p>
-        <p>Email: cvinyard1@sycamores.indstate.edu</p>
-        <p><a href="https://github.com/cvinyard1" target="_blank">GitHub Profile</a></p>
-    </div>
+        <button onclick="showMessage()">Click Me</button>
+    </main>
 
-    <section>
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Movie Ranking Project</h3>
-            <p>A web page that displays my favorite movies ranked by rating with descriptions.</p>
-            <img src="assets/images/BestMovies.png" alt="Movie Ranking Project">
-            <p><a href="HW2.html">View Project</a></p>
-        </div>
-
-        <div class="project">
-            <h3>Birthday Invite Project</h3>
-            <p>An interactive birthday invitation webpage with styling and interactive elements.</p>
-            <img src="assets/images/Birthday.png" alt="Birthday Invite Project">
-            <p><a href="HW3.html">View Project</a></p>
-        </div>
-    </section>
-
-    <section>
-        <h2>About Me</h2>
-        <p>I'm a web development student passionate about creating responsive and user-friendly websites. With experience in HTML and CSS, I'm continuously learning and improving my skills to build modern web applications.</p>
-    </section>
-
-    <section>
-        <h2>Contact Information</h2>
-        <p>Email: cvinyard1@sycamores.indstate.edu</p>
-        <p>GitHub: <a href="https://github.com/cvinyard1" target="_blank">github.com/cvinyard1</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Camden Vinyard. All rights reserved.</p>
-        <p><a href="https://github.com/cvinyard1" target="_blank">GitHub Profile</a></p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
